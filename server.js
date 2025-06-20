@@ -6,6 +6,8 @@ const Redis = require('ioredis');
 const app = express();
 const port = process.env.PORT || 3000;
 
+const authRoutes = require('./routes/authRoutes');
+
 // Middleware
 app.use(express.json());
 
@@ -26,6 +28,8 @@ app.set('redisClient', redisClient);
 app.get('/', (req, res) => {
     res.send('Bem-vindo à API de E-commerce!');
 }); 
+
+app.use('/api/auth', authRoutes);
 
 // Iniciar o servidor
 app.listen(port, () => {
