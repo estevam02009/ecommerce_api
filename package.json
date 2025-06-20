@@ -1,0 +1,27 @@
+{
+  "name": "ecommerce_api",
+  "version": "0.0.1",
+  "description": "API para ecommerce utilizando NodeJS, Redis e MongoDB",
+  "keywords": [
+    "API",
+    "Ecommerce",
+    "NodeJS",
+    "Redis",
+    "MongoDB"
+  ],
+  "homepage": "https://github.com/estevam02009/ecommerce_api#readme",
+  "bugs": {
+    "url": "https://github.com/estevam02009/ecommerce_api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estevam02009/ecommerce_api.git"
+  },
+  "license": "ISC",
+  "author": "Manoel Estevam Neto",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
