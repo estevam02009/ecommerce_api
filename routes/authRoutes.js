@@ -7,4 +7,4 @@ const router = express.Router();
 router.post("/register", registerUser);
 router.post("/login", loginUser);
 
-module.exports = { authRoutes: router };
+module.exports = router;

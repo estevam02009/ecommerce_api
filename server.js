@@ -7,6 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const authRoutes = require('./routes/authRoutes');
+const productRoutes = require('./routes/productRoutes');
 
 // Middleware
 app.use(express.json());
@@ -30,6 +31,7 @@ app.get('/', (req, res) => {
 }); 
 
 app.use('/api/auth', authRoutes);
+app.use('/api/products', productRoutes);
 
 // Iniciar o servidor
 app.listen(port, () => {

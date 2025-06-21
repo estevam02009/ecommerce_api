@@ -19,7 +19,7 @@ const registerUser = async (req, res) => {
             return res.status(400).json({ message: "Usuário já existe com este email." });
         }
 
-        const user = await user.create({
+        const user = await User.create({  // Corrigido de 'user.create' para 'User.create'
             nome,
             email,
             senha,
@@ -67,3 +67,5 @@ const loginUser = async (req, res) => {
         return res.status(500).json({ message: "Erro interno do servidor." });
     }
 }
+
+module.exports = { registerUser, loginUser };

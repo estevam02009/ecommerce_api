@@ -119,6 +119,6 @@ exports.updateStock = async (req, res) => {
         console.error(err);
         res.status(500).json({ message: 'Erro ao atualizar estoque' });
     }
-}
+};
 
-module.exports = productController;
+// module.exports = productController;
